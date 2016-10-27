@@ -8,7 +8,7 @@ import {ROUTER_DIRECTIVES} from "angular2/router";
     selector: 'my-app',
     template: `
     	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <nav class="navbar navbar-default navbar-fixed-top">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
             <ul class="nav navbar-nav">
                 <li><a [routerLink]="['Recipes']">Recipes</a></li>
                 <li><a [routerLink]="['ShoppingList']">Shopping List</a></li>

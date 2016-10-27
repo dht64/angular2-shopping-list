@@ -9,7 +9,7 @@ import {RecipeEditComponent} from "./recipe-edit.component";
 @Component({
 	selector: 'my-recipes',
 	template: `
-		<div class="containter" style="padding-top:70px;">
+		<div class="containter" style="padding-top:50px;">
 			<div class="row">
 				<div class="col-md-6 master">
 					<my-recipe-list></my-recipe-list>
