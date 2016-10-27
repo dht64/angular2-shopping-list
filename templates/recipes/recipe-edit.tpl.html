@@ -1,0 +1,40 @@
+<div class="recipe">
+	<form class="form-group" [ngFormModel]="myForm" (ngSubmit)="onSubmit()" #f="ngForm">
+		<span><button type="submit" class="btn btn-success" [disabled]="!f.valid">Save</button></span>
+		<span><a class="btn btn-warning" (click)="onCancel()">Cancel</a></span>
+		<div>
+			<label for="name">Title</label>
+			<input class="form-control" [ngFormControl]="myForm.controls['name']" type="text" id="name">
+		</div>
+		<div>
+			<label for="image-url">Image URL</label>
+			<input class="form-control" [ngFormControl]="myForm.controls['imageUrl']" type="text" id="image-url" #imageUrl>
+		</div>
+		<br>
+		<div>
+			<img class="img-responsive img-thumbnail" [src]="imageUrl.value" alt="">
+		</div>
+		<br>
+		<div>
+			<label for="content">Content</label>
+			<textarea class="form-control" [ngFormControl]="myForm.controls['content']" type="text" id="content" rows="6"></textarea>
+		</div>
+		<div>
+			<ul class="list-group">
+				<h4>Ingredients</h4>
+				<li class="list-group-item form-inline" *ngFor="#item of myForm.controls['ingredients'].controls; #i = index">
+					<input class="form-control" type="text" [ngFormControl]="item.controls['name']">
+					<input class="form-control" type="text" [ngFormControl]="item.controls['amount']">
+					<a class="btn btn-danger btn-sm" (click)="onRemoveItem(i)">X</a>
+				</li>
+			</ul>
+		</div>
+	</form>
+	<hr>
+	<div class="form-group form-inline">
+		<h5>Add Ingredient:</h5>
+		<input class="form-control" type="text" #itemName>
+		<input class="form-control" type="text" #itemAmount>
+		<a class="btn btn-success" (click)="onAddItem(itemName.value, itemAmount.value)">+</a>
+	</div>
+</div>
