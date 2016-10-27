@@ -90,7 +90,6 @@ export class RecipeEditComponent implements OnInit, CanDeactivate {
 			fbRecipeName = this.recipe.name;
 			fbRecipeImageUrl = this.recipe.imageUrl;
 			fbRecipeContent = this.recipe.content;
-			
 		}
 		this.myForm = this._formBuilder.group({
 			name: [fbRecipeName, Validators.required],
