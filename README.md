@@ -1,20 +1,7 @@
-# Angular 2 Beta Boilerplate
+# Angular 2 Food recipe and Shopping list
 
 ## Description
-This repository acts as a very simple Angular 2 Beta Boilerplate with which you can get started developing Angular 2 immediately.
-It is derived from the official Angular 2 Documentation which can be found [here](https://angular.io/docs/ts/latest/quickstart.html).
-## Usage
-Follow the following steps and you're good to go! Important: Typescript and npm has to be installed on your machine!
+This is an angular 2 project of food recipes and shopping list, by that you could create/edit/update food recipes, ingredients and add ingredients to the shopping list. 
 
-1: Clone repo
-```
-git clone https://github.com/mschwarzmueller/angular-2-beta-boilerplate.git
-```
-2: Install packages
-```
-npm install
-```
-3: Start server (includes auto refreshing) and gulp watcher
-```
-npm start
-```
+### Screenshots:
+![Front page](https://c5.staticflickr.com/6/5717/30296199140_03fe518a81_c.jpg)
